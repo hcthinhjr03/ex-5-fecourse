@@ -12,3 +12,151 @@ li:hover {
     color: white;
     background-color: #0056A6;
 }
+
+/* Bai 2 */
+
+
+table {
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+}
+th {
+    background-color: #01987A;
+    color: white;
+}
+tr th {
+    padding: 10px;
+}
+tr td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu {
+    color: white;
+    background-color: #E25300;
+    position: sticky;
+    padding: 12px 20px;
+    border-radius: 8px;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+}
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.parents {
+    background-color: #CCCCCC;
+    width: 100%;
+    height: 600px;
+    margin-top: 100px;
+    position: relative;
+    border-radius: 12px;
+}
+
+[class|="child"] {
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    text-align: center;
+    border-radius: 12px;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+.child-1 {
+    background-color: #E25300;
+    color: white;
+}
+.child-2 {
+    background-color: #D40000;
+    color: white;
+    top: 20px;
+    right: 20px;
+}
+.child-3 {
+    background-color: #369400;
+    color: white;
+    bottom: 50px;
+    right: 30px;
+}
+.child-4 {
+    background-color: #2A00D4;
+    color: white;
+    bottom: 50px;
+    left: 30px;
+}
+
+
+/* Bai 3 */
+
+
+.content {
+    background-color: #0065bc;
+    color: white;
+    margin-top: 30px;
+    border-radius: 12px;
+    padding: 80px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #0000002d;
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: #0000002d;
+}
+.inner {
+    position: relative;
+    z-index: 1;
+}
+
+.inner::first-line {
+    text-transform: uppercase;
+}
+.inner::first-letter {
+    font-size: 80px;
+}
+
+
+.call {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.call a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    background-color: #147a00;
+    border-radius: 50%;
+    z-index: 9999;
+}
