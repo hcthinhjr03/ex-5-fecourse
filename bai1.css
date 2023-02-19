@@ -1,0 +1,14 @@
+.list-1 li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+.list-1 {
+    list-style-type: none;
+    display: inline-block;
+    min-width: 250px;
+}
+li:hover {
+    color: white;
+    background-color: #0056A6;
+}
